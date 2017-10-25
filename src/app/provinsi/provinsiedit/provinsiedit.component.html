@@ -1,0 +1,20 @@
+
+    <div>
+        <h1 align="center">Edit Provinsi</h1>
+        <br/>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-1 control-label">Kode Provinsi</label>
+                <div class="col-sm-10">
+                    <input [(ngModel)]="dataProvinsiEdit.KdProvinsi" name="kode" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                    <label class="col-sm-1 control-label">Nama Provinsi</label>
+                    <div class="col-sm-10">
+                        <input [(ngModel)]="dataProvinsiEdit.NamaProvinsi" name="nama" type="text" class="form-control">
+                    </div>
+                </div>
+                <button class="btn btn-success" (click)="EditProvinsi(this.dataProvinsiEdit._id)">Save</button>
+        </form>
+    </div>

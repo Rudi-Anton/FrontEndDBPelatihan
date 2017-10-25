@@ -1,0 +1,37 @@
+<div>
+  <h1 align="center">Edit Variasi Obat</h1>
+  <br/>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="col-sm-1 control-label">Kode Variasi Obat</label>
+      <div class="col-sm-10">
+        <input [(ngModel)]="dataVariasiObatEdit.KdVariasiObat" name="KdVariasiObat" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-1 control-label">Kode Kategori Obat</label>
+      <div class="col-sm-10">
+        <input [(ngModel)]="dataVariasiObatEdit.KdKategoriObat" name="KdKategoriObat" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-1 control-label">Kode Jenis Obat</label>
+      <div class="col-sm-10">
+        <input [(ngModel)]="dataVariasiObatEdit.KdJenisObat" name="KdJenisObat" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-1 control-label">Nama Variasi Obat</label>
+      <div class="col-sm-10">
+        <input [(ngModel)]="dataVariasiObatEdit.NamaVariasiObat" name="NamaVariasiObat" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-1 control-label">Harga Variasi Obat</label>
+      <div class="col-sm-10">
+        <input [(ngModel)]="dataVariasiObatEdit.HargaVariasiObat" name="HargaVariasiObat" type="text" class="form-control">
+      </div>
+    </div>
+    <button class="btn btn-success" (click)="EditVariasiObat(this.dataVariasiObatEdit._id)">Save</button>
+  </form>
+</div>
